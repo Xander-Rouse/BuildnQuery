@@ -32,6 +32,7 @@ TourName NVARCHAR(100)
 
 CREATE TABLE Booking(
 ClientID INT
+,TourName NVARCHAR(100)
 ,EventMonth NVARCHAR(3)
 ,EventDay INT
 ,EventYear INT
