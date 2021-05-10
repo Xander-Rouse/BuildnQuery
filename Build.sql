@@ -72,3 +72,10 @@ INSERT INTO Booking (ClientID, Tourname, EventMonth, EventDay, EventYear, Paymen
 (3, 'South', 'Jan', 16, 2016, 200, 9/1/2016),
 (2, 'West', 'Jan', 29, 2016, 225, 17/12/2015),
 (3, 'West', 'Jan', 29, 2016, 200, 18/12/2015);
+/* change dates to yyyy-mm-dd */
+
+
+SELECT givenname, surname from client
+SELECT tourname, desciption from tour
+SELECT eventday, eventmonth, eventyear, eventfee from event
+SELECT datebooked, payment from booking
