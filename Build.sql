@@ -6,13 +6,13 @@ BOOKING (DateBooked, Payment)
 CLIENT (ClientID, Surname, GivenName, Gender)
 Primary Key (ClientID)*/
 
-CREATE TABLE Tour
+CREATE TABLE Tour(
 TourName NVARCHAR(100)
 ,Desciption NVARCHAR(500)
 ,PRIMARY KEY (TourName)
 );
 
-CREATE TABLE Client
+CREATE TABLE Client(
 ClientID INT
 ,Surname NVARCHAR(100)
 ,GivenName NVARCHAR(100)
@@ -20,7 +20,7 @@ ClientID INT
 PRIMARY KEY (ClientID)
 );
 
-CREATE TABLE Event
+CREATE TABLE Event(
 TourName NVARCHAR(100)
 ,EventMonth NVARCHAR(3)
 ,EventDay INT
@@ -30,7 +30,7 @@ TourName NVARCHAR(100)
 ,FOREIGN KEY (TourName) REFERENCES (Tour)
 );
 
-CREATE TABLE Booking
+CREATE TABLE Booking(
 ClientID INT
 ,EventMonth NVARCHAR(3)
 ,EventDay INT
